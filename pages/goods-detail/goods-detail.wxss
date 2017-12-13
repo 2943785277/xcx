@@ -1,0 +1,197 @@
+ page{background: #fff;}
+ .slide-image {
+  width: 100%;
+  height: 100%;
+}
+.slide-image1{
+  width: 100%;
+  height: 450rpx
+}
+
+.view-img {
+  position: fixed;
+  right: 24rpx;
+  top: 40rpx;
+  width: 80rpx;
+  height: 80rpx;
+}
+.detail-content{margin-bottom: 30rpx;}
+.detail-title {
+  color: #000;
+  margin: 30rpx 30rpx 0 30rpx;
+}
+
+.detail-price {
+  display: -webkit-flex;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-top: 20rpx;
+}
+
+.detail-price text:nth-child(1) {
+  color: #e64340;
+  font-size: 60rpx;
+  margin-left: 3%;
+}
+
+.detail-price text:nth-child(2) {
+  color: #999;
+  font-size: 36rpx;
+  margin-right: 3%;
+}
+
+.detail-content-color {
+  display:flex;
+  flex-wrap: wrap;
+  margin-top: 30rpx;
+  margin-left: 3%;font-size: 28rpx;flex-direction: row
+}
+.detail-content-color view{}
+.detail-content-color .l{display: inline-block;width: 120rpx;height: 60rpx;}
+.detail-content-color .r{width: 600rpx;}
+.detail-content-color text, 
+.detail-content-color2, text {color: #999;font-size: 28rpx;}
+.detail-title text{display: -webkit-box;color: #000;-webkit-box-orient: vertical;-webkit-line-clamp: 3;overflow: hidden;line-height: 1.5;}
+.detail-content-color1 .is_checked {
+  width: 240rpx;
+  height: 60rpx;
+  line-height: 60rpx;
+  background-color: #ff0054;
+  color: #fff;
+
+}
+
+.detail-content-color1 .normal {
+  width: 240rpx;
+  height: 60rpx;
+  line-height: 60rpx;
+}
+
+.detail-content-box .is_checked {display: inline-block;
+  height: 60rpx;
+  line-height: 60rpx;
+  background-color: #ff0a05;
+  color: #fff;padding: 0 20rpx;margin: 0 20rpx 20rpx 0;font-size: 30rpx;
+}
+
+.detail-content-box .normal {display: inline-block;height: 60rpx;line-height: 60rpx;padding: 0 20rpx;margin: 0 20rpx 20rpx 0;
+font-size: 30rpx;border:0; }
+
+.detail-content-box-btn {
+  margin-top: 20rpx;
+  margin-left: 19%;
+}
+.t{width: 120rpx;line-height: 60rpx;}
+.detail-content-num {
+  display: -webkit-flex;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.detail-content-box2 {
+  display: -webkit-flex;
+  flex-direction: row;
+  margin: 30rpx 0;
+  margin-left: 3%;
+}
+
+
+
+.stepper {
+  height: 28px;  
+  border: 1px solid #666;
+  border-radius: 3px;
+}
+
+
+
+.stepper text {
+  width: 19px;
+  line-height: 28px;
+  text-align: center;
+  float: left;
+}
+
+
+
+.stepper input {
+  width: 40px;
+  height: 28px;
+  float: left;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 12px;
+
+  border-left: 1px solid #ccc;
+  border-right: 1px solid #ccc;
+}
+
+
+
+.stepper .normal {
+  color: black;
+}
+
+
+.stepper .disabled {
+  color: #ccc;
+}
+
+.detail-content-box3 text {
+  color: #ff5104;
+  font-size: 30px;
+  font-weight: bold;
+  display: -webkit-flex;
+  display: flex;
+  justify-content: center;
+  margin: 20rpx 0;
+}
+
+
+
+.detail-footer {
+  display: -webkit-flex;
+  display: flex;
+  justify-content: space-around;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: #f7f7fa;
+
+}
+
+.detail-footer button {
+  margin:10rpx 0;
+  color: #fff;
+  width: 350rpx;
+  height: 100rpx;
+  line-height: 100rpx;
+}
+
+.detail-footer-btn1 {
+  background-color: #ff5104;
+}
+
+.detail-footer-btn2 {
+  background-color: #ff0a05;
+} 
+
+.total{line-height: 60rpx}
+.total text{line-height: 60rpx}
+
+.comment{width: 720rpx;margin-left: 30rpx;}
+.comment .txt_top{line-height: 84rpx;display: flex;justify-content:space-between;padding-right: 30rpx;border-bottom:1px solid #e7e7e7;}
+.t_tit text{line-height: 80rpx}
+.txt_top .tl{font-size: 30rpx}
+.t_con{border-bottom:1px solid #e7e7e7;padding-right: 30rpx;}
+.t_con text{display: inline-block;line-height: 1.5;}
+.t_con .t1{color: #000;display: -webkit-box;-webkit-box-orient: vertical;-webkit-line-clamp: 3;overflow: hidden;}
+.t_con .t2{line-height: 80rpx}
+.comment .txt_bot{line-height: 84rpx;display: flex;justify-content:space-between;padding-right: 30rpx;}
+.comment .txt_bot .tr{background: url(https://cdn.it120.cc/images/weappshop/arrow-right.png) no-repeat right;background-size: 15rpx auto;}
+.txt_bot .tr text{margin-right: 20rpx}
+
+

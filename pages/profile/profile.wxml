@@ -1,0 +1,49 @@
+<view class="main">
+  <view class="header">
+    <image src="{{thumb}}" class="thumb"></image>
+    <view class="header-info">
+      <text class="nickname">{{nickname}}</text>
+    </view>
+  </view>
+
+  <view class="kongbai"></view>
+  <view class="my-item">
+    <navigator url="../integral/index">
+      <view class='t1'>积分商城</view><view class='t2'>查看积分</view>
+    </navigator>
+  </view>
+  <view class="my-item">
+    <navigator url="../order/index">
+      <view class='t1'>我的订单</view><view class='t2'>查看所有订单</view>
+    </navigator>
+  </view>
+  <view class='list'>
+    <view class='li' bindtap='order_url' data-id='1'>
+      <view class='img'><image src='../../images/profile/fukuan.png'></image></view>
+      <view class='txt'><text>待付款</text></view>
+    </view>
+     <view class='li' bindtap='order_url' data-id='2'>
+      <view class='img'><image src='../../images/profile/fahuo.png'></image></view>
+      <view class='txt'><text>待发货</text></view>
+    </view>
+     <view class='li' bindtap='order_url' data-id='3'>
+      <view class='img'><image src='../../images/profile/shouhuo.png'></image></view>
+      <view class='txt'><text>待收货</text></view>
+    </view>
+  </view> 
+  <view class="kongbai"></view>
+  <view class="my-item">
+    <navigator url="../address/index">
+      <view class='t1'>收货地址</view><view class='t2'></view>
+    </navigator>
+  </view>
+   <view class="my-item">
+    <navigator url="../coupon/index">
+      <view class='t1'>优惠券</view><view class='t2'></view>
+    </navigator>
+    <!-- <navigator url="../detail/index">
+      <view class='t1'>优惠券</view><view class='t2'></view>
+    </navigator> -->
+  </view>
+  
+</view>

@@ -1,0 +1,94 @@
+.cart{display:flex;padding:200rpx 0 0 0;color:#999;justify-content:center;flex-direction:column;align-items:center;}
+.cart image{margin-bottom:40rpx;width:160rpx;height:160rpx;border-radius:50%; }
+.cart button{margin-top:50rpx;width:200rpx;height:70rpx;border-radius:5%;background-color:#fff;font-size:26rpx;line-height:70rpx;}
+.cart .t{font-size: 32rpx;}
+.baoyou{padding:10px;color:#db2929;font-size:18px;}
+.goods{display:flex;margin-bottom:10px;padding:10px 10px 0 10px;border-top:1px solid #ddd;background:#fff;}
+.goods image{width:80px;height:80px;border:1px solid #ddd;}
+.goods .good-cont{display:flex;padding:10rpx;height:50rpx;color:#555;font-size:14px;flex:1;flex-direction:column;}
+.goods .good-cont .goods-navigator{display:flex;}
+.goods .good-cont .good-price{display:flex;justify-content:space-between;flex:3;}
+.goods .good-cont .good-price .price{color:#ec5151;font-size:16px;display: inline-block}
+.goods .good-cont .good-price .btn-box{display:flex;flex-direction:row;justify-content:space-between;}
+.goods .good-cont .good-price .btn-box image{margin:0;width:23px;height:23px;border:0;}
+.goods .good-cont .good-price .btn{display:flex;flex-direction:row;}
+.goods .good-cont .good-price .btn input{margin:0;width:40px;height:28px;border:1px solid #eee;text-align:center;font-size:16px;}
+.goods .good-cont .good-price .btn button{margin:0;}
+
+.con{padding: 25rpx;background: #fff;display: flex;justify-content:space-between;padding-left: 0rpx;
+      background-color: #fff;margin-bottom: 8rpx;}
+.con icon{margin: auto 0 auto 20rpx;width: 80rpx;}      
+.con .img{display: flex;justify-content:center;}
+.con image{width: 160rpx;height: 160rpx;margin: auto auto}
+.con .right{width: 450rpx;}
+.con .text_a{font-size: 28rpx;color: #333333;}
+.con .text_a text{width: 100%;display: inline-block;padding-top: 20rpx;display: -webkit-box;
+-webkit-box-orient: vertical;
+-webkit-line-clamp: 2;
+overflow: hidden;}
+.con .text_b{font-size: 28rpx;color: #333333;display: flex;justify-content:space-between;margin-top: 10rpx}
+.con .text_b text{height: 52rpx;line-height: 52rpx;}
+.con .del{width: 40rpx;height: 60rpx;display: flex;align-content:center;}
+.con .text_b image{width: 40rpx;height: 45rpx;}
+
+.footer{width: 725rpx;height:100rpx;padding-left: 25rpx;position: fixed;bottom: 0;left: 0;display: flex; justify-content:space-between;background: #fff;}
+.footer .xuanze{width: 160rpx;height: 100rpx;font-size: 30rpx;color: #242424;display: flex;}
+.footer .xuanze text{line-height: 100rpx;}              
+.footer .xuanze icon{margin: auto 10rpx auto 0;}              
+.footer .total_text{color:#242424;font-size: 30rpx;line-height: 100rpx;}
+.footer .total_text text{color:#ff0a05;}
+.footer .total_js{width: 220rpx;height: 100rpx;background:#ff0a05;color:#fff;
+                  font-size: 30rpx;text-align: center;line-height: 100rpx;margin: 0;padding: 0;border-radius: 0;}
+.footer .disabled{background: #d7d7d7;color: #999;}                  
+.stepper {
+  width: 80px;
+  height: 52rpx;  
+
+  border: 1px solid #666;
+  border-radius: 3px;
+  margin-left: 6.5%;
+}
+
+
+
+.stepper text {
+  width: 38rpx;
+  line-height: 52rpx;
+  text-align: center;
+  float: left;
+}
+
+
+
+.stepper .input {
+  width: 80rpx;
+  height: 52rpx;
+  float: left;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 24rpx;
+
+  border-left: 1px solid #666;
+  border-right: 1px solid #666;
+}
+
+
+
+.stepper .normal {
+  color: black;
+}
+
+
+.stepper .disabled {
+  color: #ccc;
+}
+
+.detail-content-box3 text {
+  color: #ff5104;
+  font-size: 30px;
+  font-weight: bold;
+  display: -webkit-flex;
+  display: flex;
+  justify-content: center;
+  margin: 20rpx 0;
+}

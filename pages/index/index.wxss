@@ -1,0 +1,62 @@
+page{}
+.banner{width: 100%}
+.banner image{width: 100%}
+swiper{width: 100%;height: 360rpx}
+.nav_left{overflow: hidden}
+.nav_left .nav_ul{overflow: hidden; white-space: nowrap;}
+.nav_left .nav_li{width: 150rpx;height: 80rpx;text-align: center;line-height: 80rpx;display: inline-block}
+
+/*菜单  */
+.menu{width: 100%;background: #fff;}
+.menu .menu_li{width: 20%;height: 160rpx;display: inline-block;text-align: center;margin-bottom: 10rpx;}
+.menu .menu_li .image{width: 100%;height: 120rpx;border-radius:50%;}
+.menu .menu_li image{width: 138rpx;height: 120rpx;margin: 0 auto;}
+.menu .menu_li .text{height: 40rpx;width: 100%;background:;font-size: 24rpx;line-height: 40rpx}
+.menu .menu_li text{height: 40rpx;width: 100%;display: inline-block;background:;font-size: 28rpx;line-height: 40rpx}
+
+/*列表  */
+
+.list_li{width: 355rpx;padding: 10rpx 10rpx;display: inline-block}
+.list_li image{width: 100%;height: 400rpx}
+.list_li .text{width: 100%;height: 40rpx;display: inline-block;display: flex;justify-content:space-between}
+.list_li .text text{display: inline-block;font-size: 24rpx;line-height: 40rpx;padding: 0 12rpx;}
+.list_li .text .price{color: #e93b3d;font-size: 30rpx;}
+.list_li .text .btn{color: #fff;background: #e93b3d;border-radius: 10rpx;}
+
+/*商品详情  */
+.con{padding: 25rpx;background: #fff;display: flex;justify-content:space-between;margin-bottom: 20rpx;}
+.con .img{display: flex;justify-content:center;}
+.con image{width: 160rpx;height: 160rpx;margin: auto auto}
+.con .right{width: 550rpx;padding-left: 20rpx}
+.con .text_a{font-size: 28rpx;color: #333333;line-height: 1.5;}
+.con .text_a text{width: 100%;display: inline-block;display: -webkit-box;
+-webkit-box-orient: vertical;
+-webkit-line-clamp: 2;
+overflow: hidden;}
+.con .text_b{font-size: 24rpx;color: #686868;position: relative;}
+.con .text_b{font-size: 28rpx;color: #333333;display: flex;justify-content:space-between;}
+.con .text_b text{}
+.con .text_b .t2{color: #999;font-size: 26rpx;}
+.con .text_b .btn{height: 50rpx;font-size: 30rpx;line-height: 50rpx;padding: 5rpx 30rpx;color: #fff;background: #e93b3d;border-radius:10rpx;position: absolute;right: 0;top: -20rpx;}
+.con .text_c{font-size: 24rpx;color: #f90000;height: 50rpx;line-height: 50rpx;margin-top: 10rpx}
+.con .text_c .t1{font-size: 34rpx;}
+.list .top_txt{font-size: 30rpx;background: #fff;color: #e93b3d;padding: 25rpx 25rpx 0 25rpx;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

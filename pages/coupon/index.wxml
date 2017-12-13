@@ -1,0 +1,33 @@
+<!--pages/coupon/index.wxml-->
+<view class='nav_ul'>
+    <view class="nav_li {{currentItem==0?'act':''}}" data-id="0" bindtap="nav_act">待使用</view>
+    <view class="nav_li {{currentItem==1?'act':''}}" data-id="1" bindtap="nav_act">已过期</view>
+    <view class="nav_li {{currentItem==2?'act':''}}" data-id="2" bindtap="nav_act">已使用</view>
+</view>
+<view class='kongbai'></view>
+<view class="cart" hidden="{{iscart}}">
+  <image src="http://localhost:8080/images/dingdan.png" />
+  <view class='t'>您当前暂无该类优惠券</view>
+  <button bindtap="go_url">去领劵</button>
+</view>
+
+<view class='juan' hidden="{{!iscart}}">
+    <view class='li' wx:for="{{coupon}}" data-id='{{item.id}}'>
+      <view class='top'>
+        <view class='t_l'>
+          ¥<text>{{item.price}}</text>
+        </view>
+        <view class='t_r'>
+          <text class='t1'>满{{item.price}}可用</text>
+          <text class='t2'>仅限食品类商品可用</text>
+          <text wx:if="{{item.state==0}}" class='t3 lv'>待使用</text>
+          <text wx:if="{{item.state==1}}" class='t3 hui'>已过期</text>
+          <text wx:if="{{item.state==2}}" class='t3 red'>已使用</text>
+          <!-- <text class='t3 {{item.state==0?"lv":""}}'>待使用</text> -->
+        </view>
+      </view>
+      <view class='bottom'>
+        <text>全平台</text><text>{{item.data}}</text>
+      </view>
+    </view>
+</view>

@@ -1,0 +1,40 @@
+
+<!-- <scroll-view scroll-x='true' class="nav_ul"> -->
+<view class='nav_ul'>
+  <view class="nav_li {{currentItem==0?'act':''}}" data-id="0" bindtap="nav_act">
+    <text>全部</text>
+    <text>700万+</text>
+  </view>
+  <view class="nav_li {{currentItem==1?'act':''}}" data-id="1" bindtap="nav_act">
+    <text>好评</text>
+    <text>70万+</text>
+  </view>
+  <view class="nav_li {{currentItem==2?'act':''}}" data-id="2" bindtap="nav_act">
+    <text>中评</text>
+    <text>70万+</text>
+  </view>
+  <view class="nav_li {{currentItem==3?'act':''}}" data-id="3" bindtap="nav_act">
+    <text>差评</text>
+    <text>70万+</text>
+  </view>
+  <view class="nav_li {{currentItem==4?'act':''}}" data-id="4" bindtap="nav_act">
+    <text>晒单</text>
+    <text>70万+</text>
+  </view>
+</view>  
+<!-- </scroll-view> -->
+<view class='con'>
+  <view class='comment' wx:for="{{list}}" data-id='{{item.id}}'>
+    <view class='t_tit'>
+      <view>
+        <text>{{item.name}}</text>
+      </view>
+    </view>
+    <view class='t_con'>
+      <text class='t1'>{{item.txt}}</text>
+      
+      <text class='t2'>{{item.time}}</text>
+    </view>
+  </view>
+</view>
+

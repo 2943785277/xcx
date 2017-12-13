@@ -1,0 +1,44 @@
+<!--pages/list/index.wxml-->
+<view class='nav_ul'>
+    <view class="nav_li {{currentItem==0?'act':''}}" data-id="0" bindtap="nav_act">综合</view>
+    <view class="nav_li {{currentItem==1?'act':''}}" data-id="1" bindtap="nav_act">销量</view>
+    <view class="nav_li {{currentItem==2?'act':''}}" data-id="2" bindtap="nav_act">价格
+    <view class='sanjiao'>　　
+        <view class="top {{nav_color == 'on'?'color_top':''}}"></view>
+        <view class="bott {{nav_color == 'off'?'color_bot':''}}"></view>
+      </view>
+    </view>
+</view>
+<!--商品信息  -->
+<!--列表  -->
+<view class="list">
+ <!-- <scroll-view scroll-y="true" style="height: 2600rpx;" bindscrolltolower="loadMore" bindscrolltoupper="refesh"> -->
+  <view class='con' wx:for="{{list}}" data-id='{{index}}' bindtap='list_url'>
+    <view class='img'>
+      <image src='{{item.img}}'></image>
+    </view>
+    
+    <view class='right'>
+      <view class='text_a'>
+        <text>{{item.tit}}</text>
+      </view>
+      <view class='text_c'>
+        ￥<text class='t1'>{{item.price}}</text>
+      </view>
+      <view class='text_b'>
+        <text class='t2'>{{item.strip}}条评价{{item.ping}}好评</text>
+        <text class='btn'>立即购买</text>
+      </view>
+    </view> 
+  
+</view>
+ <!-- </scroll-view> -->
+</view>
+
+
+
+
+
+
+
+

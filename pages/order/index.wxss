@@ -1,0 +1,52 @@
+/* pages/order/index.wxss */
+.nav_ul{ white-space: nowrap; display: flex;background: #fff;border-bottom: 1px solid #eee;}
+.nav_ul view{display: inline-block;padding: 0 35rpx;font-size: 30rpx;height: 100rpx;line-height: 100rpx;}
+.nav_ul .act{color: #e93b3d;border-bottom: 6rpx solid #e93b3d;}
+
+
+.cart{display:flex;padding:40rpx 0 40rpx 0;margin-top: 20rpx;justify-content:center;flex-direction:column;align-items:center;}
+.cart image{margin-bottom:20rpx;width:160rpx;height:160rpx;border-radius:50%; }
+.cart .t1{color: #333333;font-size: 32rpx;margin: 10rpx 0;}
+.cart .t2{color: #c9c9c9;font-size: 26rpx;margin: 10rpx 0;}
+
+/*商品详情  */
+.xinxi{display: flex;justify-content:space-between;padding: 25rpx;background: #fff;border-bottom:1px solid #eee;}
+.xinxi view{font-size: 28rpx;color: #333;}
+.xinxi .t1 text{color: #e93b3d;}
+.xinxi .t2{color: #333;}
+.xinxi .r{display: flex;align-items:center;}
+.xinxi .r button{margin: auto auto;font-size: 30rpx;line-height: 50rpx;padding:5rpx 35rpx;color: #fff;background: #e93b3d;border-radius:10rpx;}
+
+.con{padding:25rpx;background: #fff;display: flex;justify-content:space-between;margin-bottom: 20rpx;}
+.con .img{display: flex;justify-content:center;}
+.con image{width: 160rpx;height: 160rpx;margin: auto auto}
+.con .right{width: 550rpx;padding-left: 20rpx}
+.con .text_a{font-size: 28rpx;color: #333333;line-height: 1.5;}
+.con .text_a text{width: 100%;display: inline-block;display: -webkit-box;
+-webkit-box-orient: vertical;
+-webkit-line-clamp: 2;
+overflow: hidden;}
+.con .text_b{font-size: 24rpx;color: #686868;position: relative;}
+.con .text_b{font-size: 28rpx;color: #333333;display: flex;justify-content:space-between;}
+.con .text_b text{height: 60rpx;line-height: 60rpx;}
+.con .text_b .t2{color: #999;font-size: 26rpx;}
+.con .text_b .btn{height: 50rpx;font-size: 24rpx;line-height: 50rpx;padding: 0 15rpx;color: #fff;background: #e93b3d;border-radius:10rpx;position: absolute;right: 0;top: -20rpx;}
+.con .text_c{font-size: 24rpx;color: #f90000;height: 50rpx;line-height: 50rpx;margin-top: 10rpx}
+.con .text_c .t1{font-size: 34rpx;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

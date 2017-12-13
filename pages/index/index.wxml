@@ -1,0 +1,122 @@
+<!--banner-->
+<swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" class="banner">
+  <block wx:for="{{bannerimg}}">
+    <swiper-item>
+      <image src="{{item}}" class="slide-image" width="" height="240rpx"/>
+    </swiper-item>
+  </block>
+</swiper>
+
+<!--  菜单-->
+<view class="menu {{data_class}}">
+  <view class="menu_li" wx:for="{{menu}}" bindtap='menu_url' data-id='{{item.id}}'>
+    <view class="image">
+     <image src="{{item.img}}" data-id='{{item.id}}'></image>
+    </view>
+    <view class="text">
+     <text>{{item.tit}}</text>
+    </view>
+  </view> <!--menu_li  -->
+</view>
+<view class='kongbai'></view>
+<!--列表  -->
+<view class="list">
+  <view class='top_txt'>
+    <text>特价商品</text>
+  </view>
+  <view class='con' wx:for="{{list}}" data-id='{{item.id}}' bindtap='list_url'>
+    <view class='img'>
+      <image src='{{item.img}}'></image>
+    </view>
+  
+    <view class='right'>
+      <view class='text_a'>
+        <text>{{item.tit}}</text>
+      </view>
+      <view class='text_c'>
+        ￥<text class='t1'>{{item.price}}</text>
+      </view>
+      <view class='text_b'>
+        <text class='t2'>{{item.strip}}条评价{{item.ping}}好评</text>
+        <text class='btn'>立即购买</text>
+      </view>
+    </view>
+  </view>
+</view>
+<!-- <view class="nav_left">
+  <scroll-view scroll-x='true' style="width: 100%" class="nav_ul">
+    <view class="nav_li">首页</view>
+    <view class="nav_li">内容</view>
+    <view class="nav_li">列表</view>
+    <view class="nav_li">首页</view>
+    <view class="nav_li">内容</view>
+    <view class="nav_li">列表</view><view class="nav_li">首页</view>
+    <view class="nav_li">内容</view>
+    <view class="nav_li">列表</view><view class="nav_li">首页</view>
+    <view class="nav_li">内容</view>
+    <view class="nav_li">列表</view>
+  </scroll-view>
+</view> -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

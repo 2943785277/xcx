@@ -1,0 +1,49 @@
+<!-- <import src="../template-cart/template-cart.wxml"/>
+
+<!--如果购物车内没有数据，就显示没有数据-->
+
+<view class="cart" hidden="{{iscart}}">
+  <image src="/images/profile/gouwuche@2x.png" />
+  <view class='t'>您的购物车内还没有商品!潘娜</view>
+  <button bindtap="goshopping">去逛逛</button>
+</view>
+<!--如果有数据，就显示数据-->
+<view class="cartList" hidden="{{!iscart}}">
+  
+  <view class='con {{select_class}}' wx:for="{{carts}}" data-id='{{item.id}}'>
+    <icon type="{{item.select}}" size="24" data-index="{{index}}" data-select="{{item.select}}" bindtap="radio"/>
+    <view class='img'>
+      <image src='{{item.img}}'></image>
+    </view>
+  
+    <view class='right'>
+      <view class='text_a'>
+        <text>{{item.tit}}</text>
+      </view>
+      <view class='text_b'>
+        <text style='color:#f90000'>￥{{item.price}}</text>
+        <view class="stepper">
+          <text class="normal" data-index="{{index}}" data-num="{{item.num}}" bindtap="subtraction">-</text>
+          <text class='input'>{{item.num}}</text>
+          <text class="normal" data-index="{{index}}" data-num="{{item.num}}" bindtap="addtion">+</text>
+        </view>
+        <view class='del'>
+        <image id="img{{index}}" src="/images/gouwuche/shanchu@2x.png" bindtap="delGoods"></image>
+        </view>
+      </view>
+    </view>
+  </view>
+
+
+  <!--footer-->
+  <view class="footer">
+    <view class='xuanze' bindtap=''>
+      <icon type="{{allSelect}}" size="24"  data-select="{{allSelect}}" bindtap="allSelect"/>
+      <text>全选</text>
+    </view>
+    <view class="total_text">合计：<text>￥{{total}}</text></view>
+    <view class="total_js {{count==0?'disabled':''}}" bindtap='jiesuan'>去结算({{count}})</view>
+    <!-- <button class="total_js {{count==0?'disabled':''}}"  bindtap='jiesuan' disabled='{{count==0?true:false}}'>去结算({{count}})</button> -->
+    
+  </view>
+</view>

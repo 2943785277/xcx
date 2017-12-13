@@ -1,0 +1,52 @@
+ <!--pages/order/index.wxml-->
+<view>
+  <scroll-view scroll-x='true' class="nav_ul">
+    <view class="nav_li {{currentItem==0?'act':''}}" data-id="0" bindtap="nav_act">全部</view>
+    <view class="nav_li {{currentItem==1?'act':''}}" data-id="1" bindtap="nav_act">待付款</view>
+    <view class="nav_li {{currentItem==2?'act':''}}" data-id="2" bindtap="nav_act">待发货</view>
+    <view class="nav_li {{currentItem==3?'act':''}}" data-id="3" bindtap="nav_act">待收货</view>
+    <view class="nav_li {{currentItem==4?'act':''}}" data-id="4" bindtap="nav_act">待评价</view>
+  </scroll-view>
+</view>
+<!--无数据显示内容  -->
+<view class="cart" hidden="{{iscart}}">
+  <image src="http://localhost:8080/images/dingdan.png" />
+  <text class='t1'>您还没有相关的订单</text>
+  <text class='t2'>可以去看看有哪些想买的</text>
+</view>
+
+<!--内容  -->
+<view class='div' wx:for="{{list}}" data-id="{{item.id}}" hidden="{{!iscart}}">
+  <view class='xinxi'>
+    <view class='l'>
+      <view class='t1'>状态：
+        <text wx:if="{{item.state==0}}">待支付</text>
+        <text wx:if="{{item.state==1}}">待发货</text>
+        <text wx:if="{{item.state==2}}">待收货</text>
+        <text wx:if="{{item.state==3}}">交易成功</text>
+      </view>
+
+      <view class='t2'>总价：<text>￥{{item.price}}</text></view>
+    </view>
+    <view class='r'>
+      <button wx:if="{{item.state==0}}">去支付</button>
+      <button wx:if="{{item.state==3}}"  bindtap='to_comment' data-id="{{item.id}}">评价</button>
+    </view>
+  </view>
+  <view class='con'>
+    <view class='img'>
+      <image src='http://localhost:8080/images/img.png'></image>
+    </view>
+    
+    <view class='right'>
+      <view class='text_a'>
+        <text>舒心贴： {{item.txt}}</text>
+      </view>
+      <view class='text_b'>
+        <text class='t2'>{{item.amount}}件</text>
+      </view>
+
+    </view>
+  </view>
+</view>
+

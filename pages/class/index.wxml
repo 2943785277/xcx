@@ -1,0 +1,76 @@
+<!--pages/class/class.wxml-->
+ <view class="nav_left">
+  <scroll-view scroll-y='true' style="width: 100%" class="nav_ul">
+    <view class="nav_li {{currentItem==item.id?'act':''}}" wx:for="{{nav_left}}" data-id="{{item.id}}" bindtap="nav_url">{{item.tit}}</view>
+  </scroll-view>
+</view> 
+<!--内容  -->
+<view class="content_right">
+  <scroll-view scroll-y='true' style="width: 100%" class="content_ul">
+    <view class="content_li">
+      <view class="tit">
+        <text>热门分类</text>
+      </view>
+      <view class="content_li_li">
+        <view class=con_div" bindtap="list_url" data-id="1">
+        <view class="img">
+          <image src="http://localhost:8080/images/img_list.png"></image>
+        </view>
+        <view class="text">
+          <text>分类</text>
+        </view>
+      </view>
+      <view class=con_div">
+        <view class="img">
+          <image src="http://localhost:8080/images/img_list.png"></image>
+        </view>
+        <view class="text">
+          <text>分类</text>
+        </view>
+      </view>
+      <view class=con_div">
+        <view class="img">
+          <image src="http://localhost:8080/images/img_list.png"></image>
+        </view>
+        <view class="text">
+          <text>分类</text>
+        </view>
+      </view>
+      <view class=con_div">
+        <view class="img">
+          <image src="http://localhost:8080/images/img_list.png"></image>
+        </view>
+        <view class="text">
+          <text>分类</text>
+        </view>
+      </view>
+      </view>
+      
+    </view>
+    
+  </scroll-view>  
+</view>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

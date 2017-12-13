@@ -1,0 +1,71 @@
+<!--pages/order-details/index.wxml-->
+<view class='top'>
+  <view style='width:600rpx'>
+    <view class='txt'>
+      <text>订单：</text><text>20170914115403</text>
+    </view>
+    <view class='txt'>
+      <text>日期：</text><text>2017-09-14  11：55：26</text>
+    </view>
+  </view>
+
+  <view class='div' style='width:140rpx'>
+    <text>待付款</text>
+  </view>
+</view>
+<!--商品信息  -->
+<view class='con'>
+  <view class='img'>
+    <image src='http://localhost:8080/images/img.png'></image>
+  </view>
+  
+  <view class='right'>
+    <view class='text_a'>
+      <text>舒心贴： 仪迷你智能按摩器全身经络便携按摩仪仪迷你智能按摩器全身经络便携按摩仪</text>
+    </view>
+    <view class='text_b'>
+      <text>数量：10 运费：10.00</text>
+    </view>
+    <view class='text_c'>
+      <text>商品总价：</text><text style='color:red'>￥299.00</text>
+    </view>
+  </view>
+</view>
+<!--收货信息  -->
+<view class='information'>
+  <view class='text_a'>
+    <text>收货信息</text>
+  </view>
+  <view class='text_b'>
+    <text>张三</text><text>123456784123</text>
+  </view>
+  <view>
+    <text>浙江省杭州市文一西路998号4幢608室</text>
+  </view>
+</view>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

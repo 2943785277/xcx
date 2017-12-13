@@ -1,0 +1,101 @@
+<scroll-view scroll-y="true">
+  <swiper style="height:700rpx" indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+    <block wx:for="{{imgUrls}}" wx:key="item">
+      <swiper-item>
+        <image src="{{item}}" class="slide-image" mode="scaleToFill" />
+      </swiper-item>
+    </block>
+  </swiper>
+
+  <block bindtap="detail-gouwuche">
+    <image class="view-img" src="{{gouwucheUrl}}" bindtap="jumpImg"></image>
+  </block>
+  <block>
+    <view class="detail-content">
+      <view class="detail-title">
+        <text>{{detail_title}}</text>
+      </view>
+      <view class="detail-price">
+        <text>¥{{detail_price}}</text>
+        <text>库存{{detail_num}}件</text>
+      </view>
+   </view>
+  </block>
+
+  <view class="detail-line"></view>
+
+  <view class="detail-content-box">
+
+    <view class="detail-content-color">
+      <view class='l'>
+        <text class='t'>颜色</text>
+      </view>
+      <view class='r'>
+        <block wx:for="{{key}}">
+          <button bindtap="changeColor1" data-id="{{index}}" class="{{index == colorId?'is_checked':'normal'}}">{{item}}</button>
+        </block>
+      </view>
+    </view>
+  </view>
+
+
+  <view class="detail-content-box2">
+    <text class='t'>数量</text>
+    <view class="stepper">
+      <text class="normal" bindtap="bindMinus" disabled="{{num < 1?'disabled':'false'}}">-</text>
+      <input type="number" bindinput="bindManual" value="{{num}}" />
+      <text class="normal" bindtap="bindPlus">+</text>
+    </view>
+  </view>
+
+  <!-- <view class="detail-content-box2">
+    <text class='t'>总价</text>
+    <view class="total">
+      <text style='color:#e64340'>{{total}}元</text>
+    </view>
+  </view> -->
+  <!--评论  -->
+  <view class="detail-line"></view>
+  <view class='comment'>
+    <view class='txt_top'>
+      <view class='tl'>
+        <text>评论</text>
+      </view>
+      <view class='tr'>
+        <text style='color:#ff0a05'>88%  </text>
+        <text>好评</text>
+      </view>
+    </view>
+    <view class='t_tit'>
+      <view>
+        <text>XXX</text>
+      </view>
+    </view>
+    <view class='t_con'>
+      <text class='t1'>赛加价哦啊二监区期间诶骄傲你傲娇地啊哦哦IQ我家穷巨阿萨德萨达 阿萨德企鹅群无太过分和个分号发生的顺丰速递斯蒂芬斯蒂芬第三方发生的第三方数度额阿萨德企鹅群无太过分和个分号发生的顺丰速递斯蒂芬斯蒂芬第三方发生的第三方数度额偶去啊偶去啊</text>
+      
+      <text class='t2'>2017-11-06 | 在线充值</text>
+    </view>
+    <view class='txt_bot' bindtap='to_comment'>
+      <view class='tl'>
+        <text> 共1条评论</text>
+      </view>
+      <view class='tr'>
+        <text>查看更多</text>
+      </view>
+    </view>
+  </view>
+  <view class="detail-line"></view>
+  <view class="detail-content-box3">
+    <text>商品详情</text>
+  </view>
+  <view wx:for="{{detailSrc}}" wx:for-item="itemName" wx:key="itemName">
+    <image class="slide-image1" src="{{itemName}}" mode="scaleToFill"></image>
+  </view>
+  <view class="kongbai"></view>
+  <view class="detail-footer">
+    <button class="detail-footer-btn1" data-id="{{goodsid}}" bindtap="addShopCar">加入购物车</button>
+    <button class="detail-footer-btn2" bindtap="buyNow">立即购买</button>
+  </view>
+  <!--alert  -->
+</scroll-view>

@@ -1,0 +1,113 @@
+<!--pages/settlement/index.wxml-->
+<!--pages/order-details/index.wxml-->
+<!--收货地址  -->
+<view class='dizhi'>
+  <!--无地址  -->
+  <!-- <view class='wu'>
+    <text>请填写收货地址</text>
+  </view> -->
+  <!--有地址  -->
+  <view class='div' bindtap='to_url'>
+      <view class='img'>
+        <image src='http://localhost:8080/images/dizhi.png'></image>
+      </view>
+      <view class='txt'>
+        <view class='t'>
+          <text>收货人：张三   13558768459</text>
+        </view>
+        <view class='ta'>
+          <text>收货地址：浙江省杭州市浙江省杭州市文一西路998号4幢608室</text>
+        </view>
+      </view>
+  </view>
+  <image class='left_icon'></image>
+</view>
+<!--商品信息  -->
+<view class='con'>
+  <view class='img'>
+    <image src='http://localhost:8080/images/img.png'></image>
+  </view>
+  
+  <view class='right'>
+    <view class='text_a'>
+      <text>舒心贴： 仪迷你智能按摩器全身经络便携按摩仪仪迷你智能按摩器全身经络便携按摩仪</text>
+    </view>
+    <view class='text_b'>
+      <text>数量：1</text>
+      <text style='color:#f90000'>￥299.00</text>
+    </view>
+  </view>
+</view>
+<!--收货信息  -->
+<view class='information'>
+  <view class='text'>
+    <text>配送方式</text>
+    <picker bindchange="bindPickerChange" value="{{index}}" range="{{array}}">
+      <view class="picker">
+        {{array[index]}}
+      </view>
+    </picker>
+  </view>
+  <view class='text'>
+    <text>促销优惠</text><text>已减￥1.00</text>
+  </view>
+  <view class='text'>
+    <text>优惠券</text><text>优惠券</text>
+  </view>
+  <!-- <view class='text'>
+    <text>运费</text><text>￥1.00</text>
+  </view> -->
+  <view class='text'>
+    <text>买家留言：</text><input type="text" placeholder="选填，可填写您和卖家达成一致的要求" name=""></input>
+  </view>
+  <!-- <view class='text'>
+    <text>买家留言：</text>
+    <view class='textarea'><textarea placeholder="" auto-height name=""></textarea></view>
+  </view> -->
+</view>
+  <view class='text-2'>
+    <view>
+      <text>商品金额</text><text class='t'>￥999.00</text>
+    </view>
+    <view>  
+      <text>促销优惠</text><text class='t'>已减￥999.00</text>
+    </view>  
+    <view>  
+      <text>运费</text><text class='t'>+￥999.00</text>
+    </view>
+    <view>  
+      <text>优惠券</text><text class='t'>-￥999.00</text>
+    </view>
+    <view class='text text_a'>
+      <text></text><text>实付金额：￥1.00</text>
+    </view>
+  </view>
+<view class='bat'>
+  <button>微信支付</button>
+</view>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

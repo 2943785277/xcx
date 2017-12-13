@@ -1,0 +1,22 @@
+/* pages/contact/index.wxss */
+page{background: #fff;}
+.con{margin-top: 35rpx;padding: 0 30rpx;}
+.con view{padding-left: 55rpx;border-bottom: 1px solid #cfcfcf;}
+.con text{display: inline-block;width: 100%;font-size: 28rpx;line-height: 80rpx;color: #282828;}
+
+.con .phone{background-image:url("http://localhost:80 80/images/phone.png") no-repeat;background-size: 40rpx auto; }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

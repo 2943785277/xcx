@@ -1,0 +1,41 @@
+<view class="l-evalbox row">
+  <text class="l-evaltxt">满意度：</text>
+  <view class="l-evalist flex-1" bindtap="chooseicon">
+    <view  class="{{tabArr.curHdIndex >'0'? 'cur icon' : 'icon'}}" data-id="1"></view>
+    <view  class="{{tabArr.curHdIndex >'1'? 'cur icon' : 'icon'}}" data-id="2"></view>
+    <view  class="{{tabArr.curHdIndex >'2'? 'cur icon' : 'icon'}}" data-id="3"></view>
+    <view  class="{{tabArr.curHdIndex >'3'? 'cur icon' : 'icon'}}" data-id="4"></view>
+    <view  class="{{tabArr.curHdIndex >'4'? 'cur icon' : 'icon'}}" data-id="5"></view>
+  </view>
+</view>
+<view class='con'>
+  <textarea class='textarea' placeholder='宝贝满足你的期待吗？说说你的使用心得，分享给想买的他们吧'></textarea>
+  <view class='imgurl'>
+    <view class='list'>
+      <block wx:for="{{img_url}}">
+        <view class='img'>
+          <image src='{{item}}' data-index='{{index}}' bindtap='previewImage'></image>
+          <view class='del' bindtap='delimg' data-id='{{index}}'></view>
+        </view> 
+      </block>  
+      
+    </view>
+    <view bindtap='addimg' class='add_img'></view>
+  </view>
+</view>
+<button class='sub'>评论</button>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

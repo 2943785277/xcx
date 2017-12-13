@@ -1,0 +1,32 @@
+page{background: #fff;}
+.nav_ul{ white-space: nowrap; display: flex;background: #fff;border-bottom: 1px solid #eee;}
+.nav_ul view{font-size: 28rpx;flex: 1;padding: 5rpx 0;}
+.nav_ul text{text-align: center;}
+.nav_ul .act{color: #e93b3d;border-bottom: 6rpx solid #e93b3d;}
+.nav_ul .nav_li text{width: 100%;display: block;line-height: 1.5}
+
+/*评论  */
+.comment{width: 720rpx;margin-left: 30rpx;font-size: 28rpx;}
+.comment .txt_top{line-height: 84rpx;display: flex;justify-content:space-between;padding-right: 30rpx;border-bottom:1px solid #e7e7e7;}
+.t_tit text{line-height: 80rpx}
+.txt_top .tl{font-size: 30rpx}
+.t_con{border-bottom:1px solid #e7e7e7;padding-right: 30rpx;}
+.t_con text{display: inline-block;line-height: 1.5;}
+.t_con .t1{color: #000;display: -webkit-box;-webkit-box-orient: vertical;-webkit-line-clamp: 3;overflow: hidden;}
+.t_con .t2{line-height: 80rpx;color: #999;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,57 @@
+{
+  "pages": [
+    "pages/reply/index",
+    "pages/index/index",
+    "pages/profile/profile",
+    "pages/contact/index",
+    "pages/address_1/index",  
+    "pages/order/index",
+    "pages/goods-detail/goods-detail",
+    "pages/list/index",
+    "pages/class/index",
+    "pages/gouwuche/gouwuche",
+    "pages/settlement/index",
+    "pages/order-details/index",
+    "pages/address/index",
+    "pages/logs/logs",
+    "pages/address-add/index",
+    "pages/integral/index",
+    "pages/coupon/index",
+    "pages/comment/index"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#36373b",
+    "navigationBarTitleText": "商城",
+    "navigationBarTextStyle": "#fff"
+  },
+  "tabBar": {
+    "selectedColor": "#44bbfd",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "images/tabBar/home.png",
+        "selectedIconPath": "images/tabBar/home_hove.png"
+      },
+      {
+        "pagePath": "pages/class/index",
+        "text": "分类",
+        "iconPath": "images/tabBar/class.png",
+        "selectedIconPath": "images/tabBar/class_hove.png"
+      },
+      {
+        "pagePath": "pages/gouwuche/gouwuche",
+        "text": "购物车",
+        "iconPath": "images/tabBar/shopping.png",
+        "selectedIconPath": "images/tabBar/shopping_hove.png"
+      },
+      {
+        "pagePath": "pages/profile/profile",
+        "text": "我的",
+        "iconPath": "images/tabBar/my.png",
+        "selectedIconPath": "images/tabBar/my_hove.png"
+      }
+    ]
+  }
+}
